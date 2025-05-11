@@ -1,0 +1,21 @@
+1746696725713:db-backup
+1746696755814:db-backup --type POSTGRES --host localhost --port 5432 --dbName mydb --username dbuser --password secret123 --backupDir /tmp/backups
+1746697117235:db-backup --type POSTGRES --host localhost --port 5432 --dbName mydb --backupDir /tmp/backups
+1746697133860:db-backup --type POSTGRES --host localhost --port 5432 --dbName  --backupDir /tmp/backups
+1746697147824:db-bakcup --help
+1746697161136:db-backup --help
+1746697782046:shell:>db-backup --type POSTGRES --host localhost --port 5432 --dbName mydb --username dbuser --password secret123 --backupDir /tmp/backups
+1746697874626:db-backup --type POSTGRES --host localhost --port 5432 --dbName mydb --username dbuser --password secret123 --backupDir /tmp/backups
+1746698424559:db-backup --type POSTGRES --host localhost --port 5432 --dbName jwt_sercurity --username Postgres  --backupDir /tmp/backups
+1746698454213:db-backup --type POSTGRES --host localhost --port 5432 --dbName jwt_sercurity --username postgres --password password --backupDir /tmp/backups
+1746698470097:db-backup --type POSTGRES --host localhost --port 5432 --dbName jwt_security --username postgres --password password --backupDir /tmp/backups
+1746703740644:open /tmp/backups/jwt_security_backup.sql
+1746703777430:cat tmp/backups/jwt_security_backup.sql
+1746704131141:db-backup --type POSTGRES --host localhost --port 5432 --dbName user_service --username postgres --password password --backupDir /tmp/backups
+1746774133902:db-restore --type POSTGRES --host localhost --port 5432 --dbName user_service --username postgres --password password --backupDir /tmp/backups/user_service_backup.sql
+1746782032323:db-restore -help
+1746782347343:db-restore --type POSTGRES --host localhost --port 5432 --dbName user_service --username postgres --password password --backupDir /tmp/backups/user_service_backup.sql
+1746784756454:db-backup --type POSTGRES --host localhost --port 5432 -dbName test_backup_restore --username postgres --password password --backupDir /tmp/backups
+1746784794118:db-backup --type POSTGRES --host localhost --port 5432 --dbName test_backup_restore --username postgres --password password --backupDir /tmp/backups
+1746784931710:db-restore  --type POSTGRES --host localhost --port 5432 --dbName test_backup_restore --username postgres --password password --backupDir /tmp/backups/test_backup_restore.sql
+1746785094305:db-restore  --type POSTGRES --host localhost --port 5432 --dbName test_backup_restore --username postgres --password password --backupDir /tmp/backups/test_backup_restore_backup.sql
